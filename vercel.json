@@ -1,6 +1,6 @@
 {
-  "cleanUrls": true,
   "rewrites": [
+    { "source": "/", "destination": "/codigo-do-visagismo.html" },
     { "source": "/(.*)", "destination": "/codigo-do-visagismo.html" }
   ]
 }
