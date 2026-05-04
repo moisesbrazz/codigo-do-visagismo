@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Código do Visagismo – Pare de Cobrar Barato</title>
+  <!-- Preconnect crítico -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://pay.wiapy.com">
+  <!-- Fonts: carregamento não-bloqueante -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap"></noscript>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -497,7 +501,10 @@
     .bonus-card .bc-img {
       width: 100%;
       aspect-ratio: 4/3;
+      object-fit: cover;
+      object-position: center;
       border-radius: 10px;
+      display: block;
     }
     .bonus-card h3 {
       font-family: 'Montserrat', sans-serif;
@@ -884,7 +891,7 @@
       <!-- ===== FIM VSL ===== -->
 
       <div class="hero-cta">
-        <a href="#comprar" class="btn-green btn-green--wide">
+        <a href="https://pay.wiapy.com/69f91669be07799f394c8e6e" class="btn-green btn-green--wide" target="_blank" rel="noopener">
           QUERO ME TORNAR UM BARBEIRO VALORIZADO!
         </a>
 
@@ -962,12 +969,12 @@
       <!-- CARROSSEL ANTES E DEPOIS -->
       <div class="carousel-wrap">
         <div class="carousel-track" id="carouselTrack">
-          <img src="images/caso-1.webp" alt="Antes e Depois – Caso 1" class="carousel-slide">
-          <img src="images/caso-2.webp" alt="Antes e Depois – Caso 2" class="carousel-slide">
-          <img src="images/caso-3.webp" alt="Antes e Depois – Caso 3" class="carousel-slide">
-          <img src="images/caso-4.webp" alt="Antes e Depois – Caso 4" class="carousel-slide">
-          <img src="images/caso-5.webp" alt="Antes e Depois – Caso 5" class="carousel-slide">
-          <img src="images/caso-6.webp" alt="Antes e Depois – Caso 6" class="carousel-slide">
+          <img src="images/caso-1.webp" alt="Antes e Depois – Caso 1" class="carousel-slide" loading="lazy" decoding="async">
+          <img src="images/caso-2.webp" alt="Antes e Depois – Caso 2" class="carousel-slide" loading="lazy" decoding="async">
+          <img src="images/caso-3.webp" alt="Antes e Depois – Caso 3" class="carousel-slide" loading="lazy" decoding="async">
+          <img src="images/caso-4.webp" alt="Antes e Depois – Caso 4" class="carousel-slide" loading="lazy" decoding="async">
+          <img src="images/caso-5.webp" alt="Antes e Depois – Caso 5" class="carousel-slide" loading="lazy" decoding="async">
+          <img src="images/caso-6.webp" alt="Antes e Depois – Caso 6" class="carousel-slide" loading="lazy" decoding="async">
         </div>
         <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)" aria-label="Anterior">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
@@ -1062,42 +1069,42 @@
       <!-- ⬇️ SUBSTITUIR CADA .tc-photo PELA FOTO DA TÉCNICA -->
 
       <div class="tecnica-card">
-        <img src="images/tecnica-1.webp" class="tc-photo" alt="Cap. 1 – O que é Visagismo Masculino">
+        <img src="images/tecnica-1.webp" class="tc-photo" alt="Cap. 1 – O que é Visagismo Masculino" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 1 — O que é Visagismo Masculino de Verdade</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-2.webp" class="tc-photo" alt="Cap. 2 – Protocolo do Primeiro Atendimento">
+        <img src="images/tecnica-2.webp" class="tc-photo" alt="Cap. 2 – Protocolo do Primeiro Atendimento" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 2 — O Protocolo do Primeiro Atendimento</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-3.webp" class="tc-photo" alt="Cap. 3 – Comportamento e Temperamentos">
+        <img src="images/tecnica-3.webp" class="tc-photo" alt="Cap. 3 – Comportamento e Temperamentos" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 3 — Comportamento e Temperamentos do Cliente</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-4.webp" class="tc-photo" alt="Cap. 4 – Identificando os 5 Formatos de Rosto">
+        <img src="images/tecnica-4.webp" class="tc-photo" alt="Cap. 4 – Identificando os 5 Formatos de Rosto" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 4 — Identificando os 5 Formatos de Rosto Masculino</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-5.webp" class="tc-photo" alt="Cap. 5 – Os 3 Terços do Rosto">
+        <img src="images/tecnica-5.webp" class="tc-photo" alt="Cap. 5 – Os 3 Terços do Rosto" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 5 — Como Tirar as Medidas do Rosto (Os 3 Terços)</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-6.webp" class="tc-photo" alt="Cap. 6 – Leitura de Linhas Faciais">
+        <img src="images/tecnica-6.webp" class="tc-photo" alt="Cap. 6 – Leitura de Linhas Faciais" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 6 — Leitura de Linhas Faciais (Retas e Curvas)</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-7.webp" class="tc-photo" alt="Cap. 7 – Decisão do Corte com Lógica">
+        <img src="images/tecnica-7.webp" class="tc-photo" alt="Cap. 7 – Decisão do Corte com Lógica" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 7 — Decisão do Corte com Lógica (não com achismo)</div>
       </div>
 
       <div class="tecnica-card">
-        <img src="images/tecnica-8.webp" class="tc-photo" alt="Cap. 8 – A Barba como Ferramenta Visagista">
+        <img src="images/tecnica-8.webp" class="tc-photo" alt="Cap. 8 – A Barba como Ferramenta Visagista" loading="lazy" decoding="async">
         <div class="tc-name">Cap. 8 — A Barba como Ferramenta Visagista</div>
       </div>
 
@@ -1120,12 +1127,7 @@
     </div>
 
     <div class="bonus-card">
-      <!-- ⬇️ FOTO / MOCKUP DO BONUS 1 -->
-      <div class="ph bc-img">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        <div class="ph-label">Mockup Bonus 1</div>
-      </div>
-      <!-- ⬆️ FIM DO PLACEHOLDER -->
+      <img src="images/bonus-1.webp" class="bc-img" alt="Dossiê Profissional" loading="lazy" decoding="async">
       <div>
         <h3>Dossiê Profissional no Canva – BÔNUS</h3>
         <p>
@@ -1138,12 +1140,7 @@
     </div>
 
     <div class="bonus-card">
-      <!-- ⬇️ FOTO / MOCKUP DO BONUS 2 -->
-      <div class="ph bc-img">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        <div class="ph-label">Mockup Bonus 2</div>
-      </div>
-      <!-- ⬆️ FIM DO PLACEHOLDER -->
+      <img src="images/bonus-2.webp" class="bc-img" alt="A Pergunta que Muda Tudo" loading="lazy" decoding="async">
       <div>
         <h3>A Pergunta que Muda Tudo – BÔNUS</h3>
         <p>
@@ -1156,12 +1153,7 @@
     </div>
 
     <div class="bonus-card">
-      <!-- ⬇️ FOTO / MOCKUP DO BONUS 3 -->
-      <div class="ph bc-img">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        <div class="ph-label">Mockup Bonus 3</div>
-      </div>
-      <!-- ⬆️ FIM DO PLACEHOLDER -->
+      <img src="images/bonus-3.webp" class="bc-img" alt="A Regra dos 700%" loading="lazy" decoding="async">
       <div>
         <h3>A Regra dos 700% – BÔNUS</h3>
         <p>
@@ -1193,7 +1185,8 @@
       <img
         src="images/Thigo queiroz.webp"
         alt="Thiago Queiroz – Visagista e Barbeiro"
-        style="width:160px; height:160px; border-radius:50%; margin:0 auto 8px; object-fit:cover; object-position:top center; display:block; box-shadow:0 4px 20px rgba(0,0,0,.4); border:3px solid var(--gold);"
+        loading="lazy" decoding="async"
+        style="width:240px; height:240px; border-radius:50%; margin:0 auto 12px; object-fit:cover; object-position:top center; display:block; box-shadow:0 6px 28px rgba(0,0,0,.5); border:3px solid var(--gold);"
       >
 
       <div class="aut-text">
@@ -1371,7 +1364,7 @@
             Acesso imediato após a compra
           </li>
         </ul>
-        <a href="#" class="btn-green" style="width:100%;">GARANTIR AGORA</a>
+        <a href="https://pay.wiapy.com/69f91669be07799f394c8e6e" class="btn-green" style="width:100%;" target="_blank" rel="noopener">GARANTIR AGORA</a>
       </div>
 
     </div>
@@ -1420,7 +1413,7 @@
       </h2>
       <p>Esse é o código. E agora ele pode ser seu.</p>
 
-      <a href="#comprar" class="btn-green btn-green--wide">
+      <a href="https://pay.wiapy.com/69f91669be07799f394c8e6e" class="btn-green btn-green--wide" target="_blank" rel="noopener">
         QUERO ME TORNAR UM BARBEIRO VALORIZADO
       </a>
 
@@ -1469,6 +1462,58 @@
       if (Math.abs(dx) > 40) moveCarousel(dx < 0 ? 1 : -1);
     }, {passive:true});
   })();
+</script>
+
+<!-- ===== STICKY BOTTOM CTA ===== -->
+<div id="sticky-cta" style="
+  position:fixed; bottom:0; left:0; right:0;
+  background:linear-gradient(135deg,#0f0f0f 0%,#1a1a1a 100%);
+  border-top:2px solid var(--gold);
+  padding:12px 16px;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  z-index:9999;
+  box-shadow:0 -4px 24px rgba(0,0,0,.7);
+  transform:translateY(100%);
+  transition:transform .35s cubic-bezier(.4,0,.2,1);
+">
+  <div style="flex:1; min-width:0;">
+    <div style="font-size:11px; color:#aaa; line-height:1.2;">Código do Visagismo</div>
+    <div style="font-size:13px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">De R$97 por apenas <span style="color:var(--gold);">R$27,90</span></div>
+  </div>
+  <a href="https://pay.wiapy.com/69f91669be07799f394c8e6e"
+     target="_blank" rel="noopener"
+     style="
+       display:inline-flex; align-items:center; gap:6px;
+       background:var(--green); color:#fff;
+       font-family:'Montserrat',sans-serif; font-weight:800; font-size:13px;
+       padding:12px 20px; border-radius:8px;
+       text-decoration:none; white-space:nowrap;
+       box-shadow:0 4px 16px rgba(34,197,94,.4);
+       flex-shrink:0;
+     ">
+    GARANTIR AGORA
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+  </a>
+  <button onclick="document.getElementById('sticky-cta').style.display='none'" aria-label="Fechar" style="
+    background:none; border:none; cursor:pointer; padding:4px;
+    color:#666; flex-shrink:0; line-height:0;
+  ">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('sticky-cta');
+  var shown = false;
+  function onScroll() {
+    var heroH = window.innerHeight * 0.9;
+    if (!shown && window.scrollY > heroH) {
+      shown = true;
+      bar.style.transform = 'translateY(0)';
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+})();
 </script>
 </body>
 </html>
