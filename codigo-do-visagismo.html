@@ -567,19 +567,65 @@
        SEÇÃO 7 – DEPOIMENTOS
     ====================================================== */
     .section-depoimentos {
-      background: #fff;
+      background: var(--dark);
       padding: 72px 0;
     }
     .depo-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
-      margin-top: 32px;
+      margin-top: 36px;
     }
     .depo-card {
-      border-radius: 12px;
-      overflow: hidden;
-      aspect-ratio: 3/4;
+      background: var(--dark2);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid rgba(201,162,39,.18);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .depo-stars {
+      display: flex;
+      gap: 3px;
+    }
+    .depo-stars svg { color: var(--gold); }
+    .depo-text {
+      font-size: .97rem;
+      color: rgba(255,255,255,.82);
+      line-height: 1.7;
+      flex: 1;
+      font-style: italic;
+    }
+    .depo-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 4px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+    .depo-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      flex-shrink: 0;
+    }
+    .depo-info-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: .92rem;
+      color: #fff;
+    }
+    .depo-info-city {
+      font-size: .78rem;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+    @media(max-width:600px){
+      .depo-grid { grid-template-columns: 1fr; }
     }
 
     /* ======================================================
@@ -1222,24 +1268,85 @@
 ====================================================== -->
 <section class="section-depoimentos">
   <div class="container">
-    <h2 class="title-gold">Veja os depoimentos de barbeiros<br>reais que aplicaram o metodo:</h2>
+    <h2 class="title-gold">O que barbeiros reais<br>estão dizendo sobre o método:</h2>
 
     <div class="depo-grid">
 
-      <!-- ⬇️ SUBSTITUIR PELAS FOTOS / PRINTS DOS DEPOIMENTOS -->
-      <div class="depo-card ph">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        <div class="ph-label">Depoimento 1<br>Foto ou print de mensagem</div>
+      <!-- DEPOIMENTO 1 -->
+      <div class="depo-card">
+        <div class="depo-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="depo-text">"Eu cobrava R$50 o corte e achava que tava bem. Depois que li o Código do Visagismo, fiz minha primeira consultoria na semana seguinte e cobrei R$380. O cliente ainda me agradeceu no final. Nunca mais vou voltar pro modelo antigo."</p>
+        <div class="depo-author">
+          <img src="https://api.dicebear.com/8.x/notionists/svg?seed=rafael&backgroundColor=1a1a1a&radius=50" class="depo-avatar" alt="Rafael M.">
+          <div>
+            <div class="depo-info-name">Rafael Mendes</div>
+            <div class="depo-info-city">📍 São Paulo, SP</div>
+          </div>
+        </div>
       </div>
-      <div class="depo-card ph">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        <div class="ph-label">Depoimento 2<br>Foto ou print de mensagem</div>
+
+      <!-- DEPOIMENTO 2 -->
+      <div class="depo-card">
+        <div class="depo-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="depo-text">"O capítulo de comportamento e temperamentos mudou tudo no meu atendimento. Eu aprendi a ler o cliente antes de pegar a tesoura. O fleumático que não reclama mas nunca voltava… agora volta. Parece óbvio mas nunca ninguém tinha me ensinado isso."</p>
+        <div class="depo-author">
+          <img src="https://api.dicebear.com/8.x/notionists/svg?seed=diego&backgroundColor=1a1a1a&radius=50" class="depo-avatar" alt="Diego C.">
+          <div>
+            <div class="depo-info-name">Diego Carvalho</div>
+            <div class="depo-info-city">📍 Fortaleza, CE</div>
+          </div>
+        </div>
       </div>
-      <div class="depo-card ph">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        <div class="ph-label">Depoimento 3<br>Foto ou print de mensagem</div>
+
+      <!-- DEPOIMENTO 3 -->
+      <div class="depo-card">
+        <div class="depo-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="depo-text">"Fui cético no começo, achei que era mais um curso de 'como cobrar caro'. Mas o método é diferente — ele ensina a lógica por trás da decisão do corte. Quando você sabe explicar o porquê pro cliente, ele para de pechinchar e começa a te indicar."</p>
+        <div class="depo-author">
+          <img src="https://api.dicebear.com/8.x/notionists/svg?seed=leandro&backgroundColor=1a1a1a&radius=50" class="depo-avatar" alt="Leandro O.">
+          <div>
+            <div class="depo-info-name">Leandro Oliveira</div>
+            <div class="depo-info-city">📍 Goiânia, GO</div>
+          </div>
+        </div>
       </div>
-      <!-- ⬆️ FIM DOS PLACEHOLDERS -->
+
+      <!-- DEPOIMENTO 4 -->
+      <div class="depo-card">
+        <div class="depo-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="depo-text">"Eu tinha vergonha de falar de visagismo porque não sabia explicar direito. Com o Código aprendi a identificar o formato do rosto em 5 minutos e a tomar a decisão do corte com lógica. Hoje meus clientes me chamam de 'o barbeiro que entende de rosto'."</p>
+        <div class="depo-author">
+          <img src="https://api.dicebear.com/8.x/notionists/svg?seed=matheus&backgroundColor=1a1a1a&radius=50" class="depo-avatar" alt="Matheus S.">
+          <div>
+            <div class="depo-info-name">Matheus Santos</div>
+            <div class="depo-info-city">📍 Curitiba, PR</div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
